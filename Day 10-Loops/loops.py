@@ -83,9 +83,9 @@ for language in lang:
 sortedlang = sorted(language_counts.items(), key=lambda x: x[1], reverse = True)
 print(sortedlang[:10])
 #Find the 10 most populated countries in the worldt
-populated = {}
+populations = {}
 for country in country_data:
     if "population" in country:
-        populated[country["name"]] = country["population"]
-sortedcountries = sorted(populated.items(), key = lambda x:x[1], reverse=True)
+        populations[country["name"]] = country["population"]
+sortedcountries = sorted(populations.items(), key = lambda x:x[1], reverse=True)
 print(sortedcountries[:10])
